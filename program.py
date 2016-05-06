@@ -4,11 +4,11 @@ import requests
 import numpy as np
 import matplotlib.pyplot as plt
 
-
+# /repos/:owner/:repo/stats/punch_card
 url = 'https://api.github.com/repos/mbostock/d3/stats/commit_activity'
+#url = 'https://api.github.com/repos/mbostock/d3/stats/punch_card'
 
 r = requests.get(url)
-
 data = r.json()
 
 
